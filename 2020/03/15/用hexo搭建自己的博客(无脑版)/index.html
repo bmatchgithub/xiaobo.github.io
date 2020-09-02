@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="关于hexo的一些使用体会">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用hexo搭建自己的博客(无脑版)">
+<meta property="og:url" content="http://yoursite.com/2020/03/15/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2(%E6%97%A0%E8%84%91%E7%89%88)/index.html">
+<meta property="og:site_name" content="XiaoBo&#39;s blog">
+<meta property="og:description" content="关于hexo的一些使用体会">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2020/03/15/ruawQXkZFjzbd1D.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/15/dQcFRlI8JEoftMT.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/15/foU8OC3bnMXgaJl.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/15/YesNvgZSu2cGj6R.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/15/2HWXCDhEkZb57Yo.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/15/HMW3pq97IXVZeBi.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/15/NDUzx83JiSLh4nM.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/15/gS7I4OafB5QesyR.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/15/9cvzLRm1fOdruib.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/15/PMTFfQZostOx5pn.png">
+<meta property="article:published_time" content="2020-03-15T11:27:00.000Z">
+<meta property="article:modified_time" content="2020-03-15T12:15:10.532Z">
+<meta property="article:author" content="Xiao Bo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/03/15/ruawQXkZFjzbd1D.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false,"dimmer":true},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/03/15/用hexo搭建自己的博客(无脑版)/"/>
+
+
+
+
+
+  <title>用hexo搭建自己的博客(无脑版) | XiaoBo's blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">XiaoBo's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/15/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2(%E6%97%A0%E8%84%91%E7%89%88)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xiao Bo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://pic1.zhimg.com/v2-62cef2766fcf83f92a913d9a108e7a42_fhd.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XiaoBo's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">用hexo搭建自己的博客(无脑版)</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-15T19:27:00+08:00">
+                2020-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="关于hexo的一些使用体会"><a href="#关于hexo的一些使用体会" class="headerlink" title="关于hexo的一些使用体会"></a><center>关于hexo的一些使用体会</center></h2><a id="more"></a>
+<hr>
+<p> 前两天学习了一手hexo搭建自己的blog网站，感觉还挺有意思的，接下来我就简单梳理一下用hexo搭建blog网站的流程吧。</p>
+<h3 id="Step1：下载好node（这是一个下载链接）"><a href="#Step1：下载好node（这是一个下载链接）" class="headerlink" title="Step1：下载好node（这是一个下载链接）"></a>Step1：下载好node（<a href="nodejs.org">这是一个下载链接</a>）</h3><p> <img src="https://i.loli.net/2020/03/15/ruawQXkZFjzbd1D.png" alt="image.png"></p>
+<ul>
+<li>下载LTS长期支持版的，然后直接按步骤一步步安装就好了</li>
+</ul>
+<h3 id="Step2：打开cmd，输入node-v和npm-v，查看一下刚刚安装的node和npm的版本"><a href="#Step2：打开cmd，输入node-v和npm-v，查看一下刚刚安装的node和npm的版本" class="headerlink" title="Step2：打开cmd，输入node -v和npm -v，查看一下刚刚安装的node和npm的版本"></a>Step2：打开cmd，输入<code>node -v</code>和<code>npm -v</code>，查看一下刚刚安装的node和npm的版本</h3><p><img src="https://i.loli.net/2020/03/15/dQcFRlI8JEoftMT.png" alt="image.png"></p>
+<h3 id="Step3：输入npm-install-g-cnpm-registry-https-registry-npm-taobao-org通过淘宝镜像源安装cnpm（因为cnpm比npm快），然后输入cnpm看看安装好了没"><a href="#Step3：输入npm-install-g-cnpm-registry-https-registry-npm-taobao-org通过淘宝镜像源安装cnpm（因为cnpm比npm快），然后输入cnpm看看安装好了没" class="headerlink" title="Step3：输入npm install -g cnpm --registry=https://registry.npm.taobao.org通过淘宝镜像源安装cnpm（因为cnpm比npm快），然后输入cnpm看看安装好了没"></a>Step3：输入<code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code>通过淘宝镜像源安装cnpm（因为cnpm比npm快），然后输入<code>cnpm</code>看看安装好了没</h3><p><img src="https://i.loli.net/2020/03/15/foU8OC3bnMXgaJl.png" alt="image.png"></p>
+<h3 id="Step4：通过cnpm开始正式安装hexo博客，输入cnpm-install-g-hexo-cli开始安装"><a href="#Step4：通过cnpm开始正式安装hexo博客，输入cnpm-install-g-hexo-cli开始安装" class="headerlink" title="Step4：通过cnpm开始正式安装hexo博客，输入cnpm install -g hexo-cli开始安装"></a>Step4：通过cnpm开始正式安装hexo博客，输入<code>cnpm install -g hexo-cli</code>开始安装</h3><p><img src="https://i.loli.net/2020/03/15/YesNvgZSu2cGj6R.png" alt="image.png"></p>
+<h3 id="然后用hexo-v验证一下"><a href="#然后用hexo-v验证一下" class="headerlink" title="然后用hexo -v验证一下"></a>然后用<code>hexo -v</code>验证一下</h3><p><img src="https://i.loli.net/2020/03/15/2HWXCDhEkZb57Yo.png" alt="image.png"></p>
+<h3 id="这样hexo的安装就到此结束了，完结撒花，然后开始正式搭建博客"><a href="#这样hexo的安装就到此结束了，完结撒花，然后开始正式搭建博客" class="headerlink" title="这样hexo的安装就到此结束了，完结撒花，然后开始正式搭建博客"></a>这样hexo的安装就到此结束了，完结撒花，然后开始正式搭建博客</h3><h3 id="Step5：首先在C-Users-user目录下-这个其实随意-新建一个文件夹myblog-这个也随意-，然后在cmd输入cd-myblog进入myblog这个文件"><a href="#Step5：首先在C-Users-user目录下-这个其实随意-新建一个文件夹myblog-这个也随意-，然后在cmd输入cd-myblog进入myblog这个文件" class="headerlink" title="Step5：首先在C:\Users\user目录下(这个其实随意)新建一个文件夹myblog(这个也随意)，然后在cmd输入cd myblog进入myblog这个文件"></a>Step5：首先在C:\Users\user目录下(这个其实随意)新建一个文件夹<code>myblog</code>(这个也随意)，然后在cmd输入<code>cd myblog</code>进入<code>myblog</code>这个文件</h3><p><img src="https://i.loli.net/2020/03/15/HMW3pq97IXVZeBi.png" alt="image.png"><br><img src="https://i.loli.net/2020/03/15/NDUzx83JiSLh4nM.png" alt="image.png"></p>
+<h3 id="Step6：在当前目录输入hexo-init开始生成博客，然后就解放双手在那等完成就好了-可能时间会有点长，慢慢等-终于装完啦，让我们看看myblog文件夹里生成了点啥东西"><a href="#Step6：在当前目录输入hexo-init开始生成博客，然后就解放双手在那等完成就好了-可能时间会有点长，慢慢等-终于装完啦，让我们看看myblog文件夹里生成了点啥东西" class="headerlink" title="Step6：在当前目录输入hexo init开始生成博客，然后就解放双手在那等完成就好了(可能时间会有点长，慢慢等~~)终于装完啦，让我们看看myblog文件夹里生成了点啥东西"></a>Step6：在当前目录输入<code>hexo init</code>开始生成博客，然后就解放双手在那等完成就好了(可能时间会有点长，慢慢等~~)终于装完啦，让我们看看<code>myblog</code>文件夹里生成了点啥东西</h3><p><img src="https://i.loli.net/2020/03/15/gS7I4OafB5QesyR.png" alt="image.png"></p>
+<h3 id="Step7：看到生成了这些东西后，我们就可以启动博客了，方法极其简单，输入hexo-s即可"><a href="#Step7：看到生成了这些东西后，我们就可以启动博客了，方法极其简单，输入hexo-s即可" class="headerlink" title="Step7：看到生成了这些东西后，我们就可以启动博客了，方法极其简单，输入hexo s即可"></a>Step7：看到生成了这些东西后，我们就可以启动博客了，方法极其简单，输入<code>hexo s</code>即可</h3><p><img src="https://i.loli.net/2020/03/15/9cvzLRm1fOdruib.png" alt="image.png"></p>
+<h3 id="启动成功，在本地生成了一个端口localhost-4000，我们来在浏览器中输入这个端口试试看"><a href="#启动成功，在本地生成了一个端口localhost-4000，我们来在浏览器中输入这个端口试试看" class="headerlink" title="启动成功，在本地生成了一个端口localhost:4000，我们来在浏览器中输入这个端口试试看"></a>启动成功，在本地生成了一个端口<code>localhost:4000</code>，我们来在浏览器中输入这个端口试试看</h3><p><img src="https://i.loli.net/2020/03/15/PMTFfQZostOx5pn.png" alt="image.png"></p>
+<h3 id="nice-搞定了！一个简简单单普普通通的博客就搭建好了，收工。至于后面怎么在里面写博客，以及怎么上传到远端那就改日再议。88"><a href="#nice-搞定了！一个简简单单普普通通的博客就搭建好了，收工。至于后面怎么在里面写博客，以及怎么上传到远端那就改日再议。88" class="headerlink" title="nice! 搞定了！一个简简单单普普通通的博客就搭建好了，收工。至于后面怎么在里面写博客，以及怎么上传到远端那就改日再议。88"></a>nice! 搞定了！一个简简单单普普通通的博客就搭建好了，收工。至于后面怎么在里面写博客，以及怎么上传到远端那就改日再议。88</h3><blockquote>
+<p>如果有小伙伴不幸看到了这篇有头无尾的文章，我背锅了，后续的内容你们可以搜搜别的大佬写的文章哦，谢谢大家</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/03/13/%E5%85%B3%E4%BA%8Ejava%E7%9A%84%E5%AE%89%E8%A3%85/" rel="next" title="关于java的安装">
+                <i class="fa fa-chevron-left"></i> 关于java的安装
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://pic1.zhimg.com/v2-62cef2766fcf83f92a913d9a108e7a42_fhd.jpg"
+               alt="Xiao Bo" />
+          <p class="site-author-name" itemprop="name">Xiao Bo</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于hexo的一些使用体会"><span class="nav-number">1.</span> <span class="nav-text">关于hexo的一些使用体会</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Step1：下载好node（这是一个下载链接）"><span class="nav-number">1.1.</span> <span class="nav-text">Step1：下载好node（这是一个下载链接）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step2：打开cmd，输入node-v和npm-v，查看一下刚刚安装的node和npm的版本"><span class="nav-number">1.2.</span> <span class="nav-text">Step2：打开cmd，输入node -v和npm -v，查看一下刚刚安装的node和npm的版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step3：输入npm-install-g-cnpm-registry-https-registry-npm-taobao-org通过淘宝镜像源安装cnpm（因为cnpm比npm快），然后输入cnpm看看安装好了没"><span class="nav-number">1.3.</span> <span class="nav-text">Step3：输入npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org通过淘宝镜像源安装cnpm（因为cnpm比npm快），然后输入cnpm看看安装好了没</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step4：通过cnpm开始正式安装hexo博客，输入cnpm-install-g-hexo-cli开始安装"><span class="nav-number">1.4.</span> <span class="nav-text">Step4：通过cnpm开始正式安装hexo博客，输入cnpm install -g hexo-cli开始安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#然后用hexo-v验证一下"><span class="nav-number">1.5.</span> <span class="nav-text">然后用hexo -v验证一下</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#这样hexo的安装就到此结束了，完结撒花，然后开始正式搭建博客"><span class="nav-number">1.6.</span> <span class="nav-text">这样hexo的安装就到此结束了，完结撒花，然后开始正式搭建博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step5：首先在C-Users-user目录下-这个其实随意-新建一个文件夹myblog-这个也随意-，然后在cmd输入cd-myblog进入myblog这个文件"><span class="nav-number">1.7.</span> <span class="nav-text">Step5：首先在C:\Users\user目录下(这个其实随意)新建一个文件夹myblog(这个也随意)，然后在cmd输入cd myblog进入myblog这个文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step6：在当前目录输入hexo-init开始生成博客，然后就解放双手在那等完成就好了-可能时间会有点长，慢慢等-终于装完啦，让我们看看myblog文件夹里生成了点啥东西"><span class="nav-number">1.8.</span> <span class="nav-text">Step6：在当前目录输入hexo init开始生成博客，然后就解放双手在那等完成就好了(可能时间会有点长，慢慢等~~)终于装完啦，让我们看看myblog文件夹里生成了点啥东西</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step7：看到生成了这些东西后，我们就可以启动博客了，方法极其简单，输入hexo-s即可"><span class="nav-number">1.9.</span> <span class="nav-text">Step7：看到生成了这些东西后，我们就可以启动博客了，方法极其简单，输入hexo s即可</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动成功，在本地生成了一个端口localhost-4000，我们来在浏览器中输入这个端口试试看"><span class="nav-number">1.10.</span> <span class="nav-text">启动成功，在本地生成了一个端口localhost:4000，我们来在浏览器中输入这个端口试试看</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nice-搞定了！一个简简单单普普通通的博客就搭建好了，收工。至于后面怎么在里面写博客，以及怎么上传到远端那就改日再议。88"><span class="nav-number">1.11.</span> <span class="nav-text">nice! 搞定了！一个简简单单普普通通的博客就搭建好了，收工。至于后面怎么在里面写博客，以及怎么上传到远端那就改日再议。88</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xiao Bo</span>
+</div>
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+</body>
+</html>
